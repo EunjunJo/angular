@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-server',
+  selector: 'app-server',
   imports: [],
   templateUrl: './server.html',
   styleUrl: './server.css',
@@ -10,6 +10,8 @@ import { Component } from '@angular/core';
 export class Server {
   serverId: number = 10;
   serverStatus: string = "offline";
-  
 
+  getServerStatus() {
+    return this.serverStatus;
+  }
 }
